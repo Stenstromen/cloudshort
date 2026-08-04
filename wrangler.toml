@@ -1,0 +1,17 @@
+name = "cloudshort"
+main = "src/index.ts"
+compatibility_date = "2024-09-01"
+
+# Cloudflare Workers KV namespace — the native, permanent key-value store.
+# Create it once with:
+#   npx wrangler kv namespace create LINKS
+# then paste the returned "id" below.
+[[kv_namespaces]]
+binding = "LINKS"
+id = "91d4b0d970f6454c98c902af2e4a37ac"
+
+# The secret required by /add and /list. For local dev this default is used;
+# in production set a real secret with:
+#   npx wrangler secret put AUTH_KEY
+[vars]
+AUTH_KEY = "change-me-in-production"
