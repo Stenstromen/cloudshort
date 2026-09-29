@@ -1,5 +1,7 @@
 # cloudshort
 
+![logo](./cloudshort.webp)
+
 A tiny URL shortener running on [Cloudflare Workers](https://developers.cloudflare.com/workers/) with **Workers KV** — Cloudflare's native, permanent key-value storage — as the backing store.
 
 Short codes are two characters long, drawn from `a-z` and `0-9` (1,296 possible codes).
